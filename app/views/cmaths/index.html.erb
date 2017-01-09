@@ -1,0 +1,6 @@
+<h1>Welcome to Coffeemath!</h1>
+<%= form_tag(controller: "cmaths", action: "update", method: "get") do %>
+	<%= label_tag(:q, "Calculate coffee") %>
+	<%= text_field_tag(:q) %>
+	<%= submit_tag("Calculate your brew!") %>
+<% end %>
