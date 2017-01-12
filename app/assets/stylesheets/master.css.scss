@@ -1,0 +1,65 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background: url('/assets/brownpattern.png');
+}
+
+.coffeetitle {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(102, 60, 18);
+	background-color: rgba(178, 166, 153, 0.3);
+	margin: 1rem;
+}
+
+.coffeetitle a {
+	color: rgb(102, 60, 18);
+}
+
+.coffeetitle a:hover {
+	color: rgb(68, 46, 11);
+}
+
+.styleimage {
+	width: 600px;
+	height: 400px;
+}
+
+.calctab {
+	background-color: rgba(188, 148, 107, 0.6);
+	width: 500px;
+	height: 400px;
+	background-blend-mode: screen;
+	text-align: right;
+	padding-right: 1rem;
+	padding-top: 3rem;
+}
+
+.calctab .calcdesc {
+	text-align: right;
+	font-size: 1.75rem;
+}
+
+.footer {
+	text-align: right;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+a {
+	color: rgb(3, 77, 168);
+}
+
+a:hover {
+	color: rgb(1, 43, 94);
+}
+
+.calcresult {
+	font-size: 1.75rem;
+}
+
+.recalclink {
+	margin-right: 1rem;
+	font-size: 1.5rem;
+}

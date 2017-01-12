@@ -1,10 +1,23 @@
-<h1>Cmaths#update</h1>
-<p>
-<% def cnum
-	params[:q].to_i
-	end %>
-<% cresult = cnum*5 %>
-<%= cresult %>
+<h1 class="coffeetitle"><%= link_to "Welcome to Coffeemath!", root_path %></h1>
+<div class="col-md-6"><%= image_tag 'coffeebeans.jpg', :class => "styleimage" %></div>
 
-<%= link_to "Recalc", root_path %>
-</p>
+<div class="col-md-6">
+	<div class="calctab">
+		<p class="calcresult">
+			<% def cnum
+				params[:q].to_i
+				end %>
+		<% cresult = cnum*2 %>
+		You'll need <%= cresult %> tablespoons <br /> of ground coffee for <br /> this many people!
+		<br />
+		<div class="recalclink"> <%= link_to "Recalc", root_path %>
+		</div>
+		</p>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+	   <p class="text"><%= link_to "Github", "https://github.com/phearn" %></p>
+    </div>
+</footer>

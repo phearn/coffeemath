@@ -1,6 +1,21 @@
-<h1>Welcome to Coffeemath!</h1>
-<%= form_tag(controller: "cmaths", action: "update", method: "get") do %>
-	<%= label_tag(:q, "Calculate coffee") %>
-	<%= text_field_tag(:q) %>
-	<%= submit_tag("Calculate your brew!") %>
-<% end %>
+<h1 class="coffeetitle"><%= link_to "Welcome to Coffeemath!", root_path %></h1>
+<div class="col-md-6"><%= image_tag 'coffeebeans.jpg', :class => "styleimage" %></div>
+
+<div class="col-md-6">
+	<div class="calctab">
+		<p class="calcdesc">
+		Calculate the scoops of coffee required <br /> by entering the number of people you <br /> are making coffee for below!
+		</p>
+		<%= form_tag(controller: "cmaths", action: "update", method: "get") do %>
+			<%= text_field_tag(:q) %>
+			<br /> <br />
+			<%= submit_tag("Calculate your brew!") %>
+		<% end %>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+	   <p class="text"><%= link_to "Github", "https://github.com/phearn" %></p>
+    </div>
+</footer>
